@@ -1,0 +1,125 @@
+form {
+  height: 500px;
+  min-width: 80%;
+  background-color: rgba(33, 20, 220, 0.19);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 5px;
+  width: 90%;
+  height: 90px;
+}
+div input {
+  width: 40%;
+  height: 75%;
+  border-radius: 5px;
+  border: none;
+  outline: 0.5px solid #000;
+  margin-top: 10px;
+  border-bottom: 1px solid #0e11c3fe;
+  font-size: 18px;
+}
+div label {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 100;
+  text-decoration-line: underline;
+  text-shadow: 1px 1px 5px #000;
+}
+.pago {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pago span {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 100;
+  text-shadow: 1px 1px 5px #000;
+}
+.pago select {
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(33, 20, 220, 0.389);
+  cursor: pointer;
+}
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+.pay {
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(20, 220, 73, 0.757);
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+.back {
+  height: 30px;
+  width: 100px;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(220, 20, 20, 0.757);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: color 500ms ease-in;
+  transition: background 300ms ease;
+  border: none;
+}
+div input::placeholder {
+  color: #000;
+  padding-left: 5px;
+}
+.back:hover {
+  color: #000;
+  background-color: rgba(33, 20, 220, 0.19);
+  font-weight: bold;
+}
+.pay:hover {
+  color: #000;
+  background-color: rgba(33, 20, 220, 0.19);
+  font-weight: bold;
+}
+@media screen and (max-width: 720px) {
+  form {
+    margin: 50px auto;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  form div {
+    width: 100%;
+  }
+  div input {
+    width: 100%;
+  }
+}

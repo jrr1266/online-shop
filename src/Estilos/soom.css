@@ -1,0 +1,15 @@
+.car {
+  width: 350px;
+  border: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 5px;
+  min-height: 500px;
+}
+.car p {
+  text-transform: lowercase;
+}
